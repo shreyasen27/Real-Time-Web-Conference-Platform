@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Google Meet Clone</title>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"/>
+    <link rel="stylesheet" href="/index.css">
+  </head>
+
+  <body class="body-font">
+
+    <div class="main_home">
+
+      <div class="main_home_header">
+        <div class="main_welcome">
+          <img src="https://www.gstatic.com/meet/google_meet_horizontal_wordmark_2020q4_1x_icon_124_40_2373e79660dabbf194273d27aa7ee1f5.png" alt="gmeet" class="logo">
+          <h6 class="welcome-title">Welcome <b class="username"><%= username %></b></h6>
+        </div>
+      </div>
+
+      <div class="main_body">
+        <div class="one">
+
+          <div class="main_about_text">
+            <h1 class="headline">Video calls and meetings <br>Now free for everyone.</h1>
+            <p class="subtext">
+              Click <strong>New meeting</strong> to get a new link you can send to people<br/>
+              you want to meet with or Join an <strong>existing meeting</strong> with a code
+            </p>
+          </div>
+
+          <div class="main_meeting">
+            
+            <div onclick="newMeet('<%=ROOM_ID%>')" class="new_meeting_button">
+              <i class="fa-solid fa-video icon-white"></i>
+              <span class="text-white">New Meeting</span>
+            </div>
+
+            <div class="link_meeting">
+              <form id="join-link">
+                <div class="input_icon">
+                  <i class="fa-solid fa-keyboard input-icon"></i>
+                  <input type="text" id="code" name="code" placeholder="Enter ROOM ID" class="input_link"/>
+                  <input type="submit" value="Join" class="join_button" />
+                </div>
+              </form>
+            </div>
+
+          </div>
+
+  
+        </div>
+
+        <div class="two">
+          <img src="https://www.gstatic.com/meet/user_edu_get_a_link_light_90698cd7b4ca04d3005c962a3756c42d.svg" alt="gimage">
+          <p class="share-text">Get a link you can share</p>
+         
+        </div>
+      </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/e28dbf8b03.js" crossorigin="anonymous"></script>
+
+    <script>
+
+      function newMeet(roomId) {
+        window.location.href = `/${roomId}`;
+      }
+
+      var form = document.getElementById("join-link");
+
+      form.addEventListener("submit", () => {
+        window.location.href = "/" + document.getElementById("code").value;
+        event.preventDefault();
+      });
+      
+    </script>
+
+  </body>
+</html>

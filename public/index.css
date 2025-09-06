@@ -1,0 +1,136 @@
+/* style.css */
+
+/* General */
+.body-font {
+  font-family: Verdana, sans-serif;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* Header */
+.logo {
+  margin: 10px;
+}
+
+.main_welcome {
+  display: flex;
+  align-items: center;
+}
+
+.welcome-title {
+  margin: 10px;
+  padding: 25px;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.username {
+  font-size: 35px;
+}
+
+/* Main Body */
+.main_body {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.one {
+  padding-left: 45px;
+  display: flex;
+  flex-direction: column;
+}
+
+.two {
+  margin-left: 320px;
+  padding-top: 0px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.headline {
+  font-family: sans-serif;
+  font-size: 45px;
+  font-weight: 200;
+}
+
+.subtext {
+  color: rgb(56, 54, 54);
+}
+
+/* Meeting Buttons */
+.main_meeting {
+  display: flex;
+  flex-direction: row;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(55, 54, 54);
+}
+
+.new_meeting_button {
+  padding: 15px 20px;
+  background-color: rgb(6, 112, 211);
+  height: fit-content;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-white {
+  color: aliceblue;
+}
+
+.text-white {
+  color: aliceblue;
+}
+
+/* Join Meeting */
+.link_meeting {
+  margin-left: 40px;
+}
+
+.input_icon {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 8px;
+}
+
+.input-icon {
+  position: absolute;
+  font-size: 20px;
+  padding: 12px;
+  color: rgb(68, 65, 65);
+}
+
+.input_link {
+  font-size: medium;
+  padding: 14px 12px 14px 38px;
+  border: 1px solid rgb(47, 46, 46);
+  border-radius: 7px;
+  flex: 1;
+}
+
+.join_button {
+  font-size: medium;
+  padding: 14px 20px;
+  color: aliceblue;
+  background-color: rgb(6, 112, 211);
+  border: 1px solid rgb(47, 46, 46);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+.share-text {
+  font-size: 30px;
+}
+
+
+
+
